@@ -791,3 +791,45 @@ body {
     font-size: 15px;
   }
 }
+/* ===== Mobile Responsive Tweaks ===== */
+@media (max-width: 600px) {
+  .portfolio-section {
+    padding: 100px 20px;
+  }
+
+  .portfolio-text-only h1 {
+    font-size: 60px;
+    opacity: 0.08;
+  }
+
+  .glass-box {
+    max-width: 280px;
+    margin: 0 auto;
+    padding: 20px 16px;
+    font-size: 14px;
+    line-height: 1.5;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  }
+
+  .glass-box h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .glass-box p {
+    font-size: 13px;
+  }
+
+  .experience-header {
+    font-size: 28px;
+  }
+
+  .contact-btn {
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto 0;
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}

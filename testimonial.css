@@ -355,3 +355,17 @@ body {
   opacity: 0.9;
   filter: drop-shadow(0 0 4px rgba(0, 229, 255, 0.5));
 }
+@media (max-width: 768px) {
+  .testimonials-header-section {
+    padding: 180px 16px 40px; /* increase top padding to push content below header */
+  }
+
+  .badge {
+    font-size: 11px;
+    padding: 5px 12px;
+    margin-bottom: 16px;
+    margin-top: 12px; /* add some top margin just in case */
+    z-index: 10;      /* ensure it's above backgrounds */
+    position: relative;
+  }
+}
