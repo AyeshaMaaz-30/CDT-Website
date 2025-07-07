@@ -702,3 +702,87 @@ nav a.active {
     grid-template-columns: 1fr;
   }
 }
+/* =================== Responsive Fixes =================== */
+@media (max-width: 991px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 20px;
+    gap: 14px;
+  }
+
+  nav {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .contact-btn {
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  .hero {
+    margin-top: 180px;
+    padding: 1.5rem 1rem;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    margin-top: 12px;
+  }
+
+  .cta-button {
+    padding: 10px 24px;
+    font-size: 16px;
+    margin-top: 18px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 0 1rem;
+  }
+
+  .services-section h2 {
+    font-size: 2.2rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .service-card p {
+    font-size: 1rem;
+  }
+
+  footer {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .cta-button {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+
+  .services-section h2 {
+    font-size: 1.8rem;
+  }
+}

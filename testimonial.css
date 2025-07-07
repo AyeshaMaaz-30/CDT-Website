@@ -1,4 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+.badge {
+  display: inline-block;
+  background: #1e1e1e;
+  color: #00e5ff;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+/* 👇 Mobile responsive fix */
+@media (max-width: 768px) {
+  .badge {
+    font-size: 16px;
+    padding: 4px 12px;
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+
+  .testimonials-header-section {
+    padding: 60px 20px 40px;
+    text-align: center;
+  }
+
+  .testimonials-header-section h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .testimonials-header-section .subtext {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .cta-button {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+}
 
 /* RESET + BASE */
 * {
@@ -14,7 +54,6 @@ body {
   color: #fff;
   font-family: 'Inter', sans-serif;
 }
-
 
 
 /* TESTIMONIAL HEADER SECTION */
@@ -35,7 +74,25 @@ body {
   margin-bottom: 20px;
   font-weight: 600;
   text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+  visibility: visible;
+  opacity: 1;
 }
+
+/* ✅ Mobile Responsive Fix */
+@media (max-width: 768px) {
+  .testimonials-header-section {
+    padding: 120px 16px 40px;
+  }
+
+  .badge {
+    font-size: 11px;
+    padding: 5px 12px;
+    margin-bottom: 16px;
+  }
+}
+
 
 
 .testimonials-header-section h1 {
